@@ -1,0 +1,56 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2025-08-18T00:00:00.000Z",
+  "__export_source": "insomnia.desktop.app:v2025.0.0",
+  "resources": [
+    {
+      "_id": "req_login",
+      "_type": "request",
+      "name": "Login",
+      "method": "POST",
+      "url": "http://localhost:8080/login",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\"email\":\"user@foro.com\",\"password\":\"password\"}"
+      }
+    },
+    {
+      "_id": "req_list_topicos",
+      "_type": "request",
+      "name": "Topicos - Listar",
+      "method": "GET",
+      "url": "http://localhost:8080/topicos"
+    },
+    {
+      "_id": "req_crear_topico",
+      "_type": "request",
+      "name": "Topicos - Crear",
+      "method": "POST",
+      "url": "http://localhost:8080/topicos",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ token }}"
+        }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\"usuarioId\":1,\"titulo\":\"Mi duda\",\"mensaje\":\"\u00bfC\u00f3mo hago X?\",\"curso\":\"Java\"}"
+      }
+    },
+    {
+      "_id": "req_eliminar_topico",
+      "_type": "request",
+      "name": "Topicos - Eliminar",
+      "method": "DELETE",
+      "url": "http://localhost:8080/topicos/1",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ token }}"
+        }
+      ]
+    }
+  ]
+}
