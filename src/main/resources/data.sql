@@ -1,0 +1,2 @@
+-- Opcional: datos iniciales si no quieres usar DataLoader
+-- INSERTS de ejemplo

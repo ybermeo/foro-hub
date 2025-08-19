@@ -1,0 +1,2 @@
+-- Opcional: JPA crea tablas automáticamente con ddl-auto=update
+-- CREATE TABLE ... (usado si quieres controlar el esquema manualmente)
